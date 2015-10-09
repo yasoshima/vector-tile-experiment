@@ -110,7 +110,7 @@ function rdcl_style(feature){
 }
 
 //道路中心線レイヤ
-var rdcllayer = L.tileLayer.canvas({attribution:"道路中心線",minZoom:14,maxNativeZoom:16,maxZoom:18,async:true});
+var rdcllayer = L.tileLayer.canvas({attribution:"道路中心線",minZoom:10,maxNativeZoom:16,maxZoom:18,async:true});
 rdcllayer.drawTile = function(canvas, tilePoint, zoom) {
 	if(zoom>this.options.minZoom){
 	var urlid = "experimental_rdcl";
