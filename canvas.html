@@ -232,7 +232,7 @@ rvrcllayer.drawTile = function(canvas, tilePoint, zoom) {
 //鉄道中心線スタイル
 function railcl_style(feature){
      if(feature.properties['snglDbl']=="駅部分"){
-        return {setLineDash:[],strokeStyle:"#ff0",lineWidth:10,globalAlpha:0.5,lineCap:"butt"};
+        return {setLineDash:[],strokeStyle:"#0ff",lineWidth:10,globalAlpha:0.5,lineCap:"butt"};
       }else{
         return {setLineDash:[],strokeStyle:"#0f0",lineWidth:5,globalAlpha:0.5,lineCap:"butt"};
       }
